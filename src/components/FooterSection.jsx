@@ -48,13 +48,16 @@ export default function FooterSection() {
               aria-label="Instagram" className="text-gray-400 hover:text-white">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-white">
+              <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" aria-label="LinkedIn" className="text-gray-400 hover:text-white">
+              <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" aria-label="Twitter" className="text-gray-400 hover:text-white">
+              <a href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white">
                 <Twitter className="h-5 w-5" />
               </a>
             </div>
