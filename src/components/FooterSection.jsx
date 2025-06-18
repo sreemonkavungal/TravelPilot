@@ -1,22 +1,25 @@
 import {
   Instagram,
   Facebook,
-  Linkedin,
-  Twitter,
 } from 'lucide-react';
 
 export default function FooterSection() {
   return (
     <footer className="bg-white text-gray-900">
-      <div className="mx-auto max-w-7xl px-6 py-16 sm:py-20 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
+      <div className="mx-auto max-w-7xl px-6 py-16 sm:py-20 lg:px-8 bg-white">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-4 px-5 md:ml-15">
+
+
+          
           {/* Column 1: Company Mission */}
-          {/* <div>
+          <div>
             <h3 className="text-lg font-semibold">TravelPilot</h3>
-            <p className="mt-4 text-sm text-gray-300">
-              TravelPilot is your trusted travel companion. We curate unforgettable experiences, ensuring every journey is smooth, safe, and filled with adventure.
+            <p className="mt-4 text-sm text-gray-600">
+              TravelPilot is your trusted travel companion making every journey smooth, safe, and unforgettable.
             </p>
-          </div> */}
+          </div>
+
+
 
           {/* Column 2: Services */}
           <div>
@@ -29,6 +32,8 @@ export default function FooterSection() {
             </ul>
           </div>
 
+
+
           {/* Column 3: Company */}
           <div>
             <h4 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">Company</h4>
@@ -40,23 +45,25 @@ export default function FooterSection() {
             </ul>
           </div>
 
+
+
           {/* Column 4: Social Icons */}
           <div>
             <h4 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">Follow Us</h4>
             <div className="mt-4 flex gap-4">
               <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"
-              aria-label="Instagram" className="text-gray-600 hover:text-gray-400">
+                aria-label="Instagram" className="text-gray-600 hover:text-gray-400">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-400">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook" className="text-gray-600 hover:text-gray-400">
                 <Facebook className="h-5 w-5" />
               </a>
             </div>
           </div>
         </div>
 
-        <div className="mt-16 border-t border-gray-700 pt-8 text-sm text-gray-400 text-center">
+        <div className="mt-16 border-t border-gray-200 pt-8 text-sm text-gray-400 text-center">
           &copy; {new Date().getFullYear()} TravelPilot. All rights reserved.
         </div>
       </div>
