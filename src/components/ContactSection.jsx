@@ -2,11 +2,11 @@ import React from 'react';
 
  function ContactSection() {
   return (
-    <div className="min-h-screen bg-white py-30 px-4 sm:px-6 lg:px-8 h-full">
+    <div className="min-h-screen bg-white py-30 px-2 sm:px-6 lg:px-8 h-full">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         
         {/* Contact Form */}
-        <div className="bg-gray-100 p-8 rounded-lg shadow-md h-full flex flex-col justify-between">
+        <div className="bg-gray-100 p-4 rounded-lg shadow-md h-full flex flex-col justify-between">
           <h2 className="text-2xl font-semibold text-gray-800 mb-6">Get in Touch</h2>
           <form action="https://formspree.io/f/mjkroozq" method="POST" className="space-y-5">
             <div>
