@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "../components/NavBar.jsx";
-
+import FooterSection from "../components/FooterSection.jsx";
 
 
 function HotelPage(){
@@ -9,6 +9,7 @@ function HotelPage(){
     return (
         <>
         <NavBar/>
+        <FooterSection/>
         </>
     )
 }
