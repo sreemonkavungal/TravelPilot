@@ -5,9 +5,9 @@ import {
 
 export default function FooterSection() {
   return (
-    <footer className="bg-white text-gray-900">
+    <footer className="bg-white text-gray-900 mt-20">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:py-20 lg:px-8 bg-white">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-4 px-5 md:ml-15">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-4 px-5 md:ml-20">
 
 
           
