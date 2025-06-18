@@ -9,7 +9,7 @@ function AboutPage(){
 
     return (
         <>
-        <NavBar/>
+        {/* <NavBar/> */}
         <FooterSection/>
         </>
     )
