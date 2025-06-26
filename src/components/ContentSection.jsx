@@ -9,12 +9,12 @@ function ContentSection() {
         {/* Left Column */}
         <div className="space-y-6">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900">
-            Discover the World with TravelPilot
+           Discover the World with TravelPilot
           </h1>
           <p className="text-lg text-gray-600">
             TravelPilot is your trusted travel companion making every journey smooth, safe, and unforgettable.
           </p>
-          <button className="mt-4 inline-block bg-green-600 hover:bg-green-700-pointer text-white font-medium py-3 px-6 rounded-md transition duration-300">
+          <button className="mt-4 inline-block bg-green-600 hover:bg-green-800 cursor-pointer text-white font-medium py-3 px-6 rounded-md transition duration-300">
             Explore
           </button>
         </div>
