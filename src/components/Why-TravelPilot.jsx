@@ -1,4 +1,4 @@
-import { CheckIcon } from '@heroicons/react/20/solid'
+import React from 'react';
 
 const tiers = [
   {
@@ -6,28 +6,22 @@ const tiers = [
     id: 'tier-hobby',
     href: '#',
     priceMonthly: '$29',
-    description: "Because your journey deserves expert planning.",
-    features: ['1', '2', '3', '4'],
-    featured: false,
+    description: 'At TravelPilot, we take pride in delivering a level of professionalism that sets us apart. Our experienced team is carefully chosen for their expertise, attention to detail, and commitment to your satisfaction. From your first inquiry to your return home, every part of your trip is handled with care, clarity, and precision. We listen to your needs, respect your time, and craft travel experiences that feel effortless yet extraordinary. Built on trust, accountability, and a passion for excellence, we’re here to ensure your journey is seamless—and truly unforgettable.',
   },
   {
     name: 'Simple & Impactful',
     id: 'tier-enterprise',
     href: '#',
     priceMonthly: '$99',
-    description: 'Smart planning. Hassle-free trips. Memories that last.',
-    features: ['1', '2', '3', '4'],
-    featured: true,
+    description: 'We believe that planning a trip should be as enjoyable as taking one. That’s why TravelPilot focuses on simplicity without compromising impact. Our user-friendly process, quick assistance, and responsive team remove the stress from travel planning, allowing you to focus on the experience. Whether it’s a weekend escape or an international adventure, we tailor every detail to match your goals and style. The result? Hassle-free, thoughtful travel that leaves a lasting impression and memories that stay with you forever.',
   },
-{
+  {
     name: 'Affordable & Reliable',
     id: 'tier-business',
     href: '#',
     priceMonthly: '$49',
-    description: 'Travel made easy. Enjoy the journey, we handle the details.',
-    features: ['1', '2', '3', '4'],
-    featured: false,
-    },
+    description: "At TravelPilot, we make your dream vacations possible—without breaking the bank. Thanks to our strong relationships with global partners, we’re able to provide exceptional experiences at competitive prices. Our best-rate promise means you never have to sacrifice quality for affordability. We combine dependable service with budget-conscious planning, offering you incredible value at every turn. Whether you're exploring hidden gems or iconic destinations, you’ll travel with the confidence of knowing you're in capable, cost-effective hands.",
+  },
 ]
 
 function classNames(...classes) {
@@ -37,31 +31,32 @@ function classNames(...classes) {
 function WhyPilot() {
   return (
     <div className="relative isolate bg-white px-6 py-24 sm:py-5 lg:px-8">
- 
 
 
- 
+
+
       <div className="mx-auto max-w-4xl text-center">
         {/* <h2 className="text-base/7 font-semibold text-green-800">Pricing</h2> */}
         <p className="mt-2 text-5xl font-bold tracking-tight text-balance text-gray-900 sm:text-5xl">
           Why Choose TravelPilot?
         </p>
       </div>
+      
       <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-pretty text-gray-600 sm:text-xl/8">
-    We turn travel dreams into real adventures with care, clarity, and a personal touch.
+        We turn travel dreams into real adventures with care, clarity, and a personal touch.
       </p>
-      {/* <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-3"> */}
-        <div className="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 items-start">
+
+      <div className="mx-auto mt-16 grid max-w-7xl h-auto grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 items-start">
 
         {tiers.map((tier, tierIdx) => (
 
-     <div
-  key={tier.id}
-  className={classNames(
-    'bg-white shadow-2xl',
-    'rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10'
-  )}
->
+          <div
+            key={tier.id}
+            className={classNames(
+              'bg-white shadow-2xl',
+              'rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10'
+            )}
+          >
 
             <h3
               id={tier.id}
@@ -83,35 +78,19 @@ function WhyPilot() {
             <p className={classNames(tier.featured ? 'text-gray-600' : 'text-gray-600', 'mt-6 text-base/7')}>
               {tier.description}
             </p>
-            <ul
-              role="list"
-              className={classNames(
-                tier.featured ? 'text-gray-600' : 'text-gray-600',
-                'mt-8 space-y-3 text-sm/6 sm:mt-10',
-              )}
-            >
-              {tier.features.map((feature) => (
-                <li key={feature} className="flex gap-x-3">
-                  <CheckIcon
-                    aria-hidden="true"
-                    className={classNames(tier.featured ? 'text-green-800' : 'text-green-800', 'h-6 w-5 flex-none')}
-                  />
-                  {feature}
-                </li>
-              ))}
-            </ul>
-            <a
+
+
+            {/* <a
               href={tier.href}
               aria-describedby={tier.id}
               className={classNames(
-                tier.featured
-                  ? 'bg-green-600 text-white shadow-xs hover:bg-green-800 focus-visible:outline-indigo-500'
-                  : 'text-indigo-600 ring-1 ring-indigo-200 ring-inset hover:ring-indigo-300 focus-visible:outline-indigo-600',
-                'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10',
+              "mt-8 block rounded-md bg-green-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-700 transition sm:mt-10"
               )}
             >
               Explore
-            </a>
+            </a> */}
+
+
           </div>
         ))}
       </div>
