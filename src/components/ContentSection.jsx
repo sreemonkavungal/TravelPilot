@@ -14,9 +14,11 @@ function ContentSection() {
           <p className="text-lg text-gray-600">
             TravelPilot is your trusted travel companion making every journey smooth, safe, and unforgettable.
           </p>
-          <button className="mt-4 inline-block bg-green-600 hover:bg-green-800 cursor-pointer text-white font-medium py-3 px-6 rounded-md transition duration-300">
+          <a 
+          href='/tour-package'
+          className="mt-4 inline-block bg-green-600 hover:bg-green-800 cursor-pointer text-white font-medium py-3 px-6 rounded-md transition duration-300">
             Explore
-          </button>
+          </a>
         </div>
 
         {/* Right Column */}
