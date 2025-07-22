@@ -6,6 +6,7 @@ import HotelPage from './pages/HotelPage.jsx'
 import FlightBookingPage from './pages/FlightBookingPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
 import TourPackagePage from './pages/TourPackagePage.jsx'
+import NotFound from './pages/NotFound.jsx'
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
         <Route path="/hotel-resort" element={<HotelPage/>} />
         <Route path="/flight-booking" element={<FlightBookingPage/>} />
         <Route path="/tour-package" element={<TourPackagePage/>} />
+        <Route path="*" element={<NotFound/>} />
       </Routes>
     </BrowserRouter>
   )
