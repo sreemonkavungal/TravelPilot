@@ -1,26 +1,27 @@
 import React from 'react';
+import { Shield, Zap, DollarSign } from 'lucide-react';
 
 const tiers = [
   {
     name: 'Professional & Trustworthy',
     id: 'tier-hobby',
     href: '#',
-    priceMonthly: '$',
-    description: 'At TravelPilot, we take pride in delivering a level of professionalism that sets us apart. Our experienced team is carefully chosen for their expertise, attention to detail, and commitment to your satisfaction. From your first inquiry to your return home, every part of your trip is handled with care, clarity, and precision. We listen to your needs, respect your time, and craft travel experiences that feel effortless yet extraordinary. Built on trust, accountability, and a passion for excellence, we’re here to ensure your journey is seamless—and truly unforgettable.',
+    icon: Shield,
+    description: 'At TravelPilot, we take pride in delivering a level of professionalism that sets us apart. Our experienced team is carefully chosen for their expertise, attention to detail, and commitment to your satisfaction. From your first inquiry to your return home, every part of your trip is handled with care, clarity, and precision. We listen to your needs, respect your time, and craft travel experiences that feel effortless yet extraordinary. Built on trust, accountability, and a passion for excellence, we are here to ensure your journey is seamless—and truly unforgettable.',
   },
   {
     name: 'Simple & Impactful',
     id: 'tier-enterprise',
     href: '#',
-    priceMonthly: '$',
-    description: 'We believe that planning a trip should be as enjoyable as taking one. That’s why TravelPilot focuses on simplicity without compromising impact. Our user-friendly process, quick assistance, and responsive team remove the stress from travel planning, allowing you to focus on the experience. Whether it’s a weekend escape or an international adventure, we tailor every detail to match your goals and style. The result? Hassle-free, thoughtful travel that leaves a lasting impression and memories that stay with you forever.',
+    icon: Zap,
+    description: 'We believe that planning a trip should be as enjoyable as taking one. That is why TravelPilot focuses on simplicity without compromising impact. Our user-friendly process, quick assistance, and responsive team remove the stress from travel planning, allowing you to focus on the experience. Whether it is a weekend escape or an international adventure, we tailor every detail to match your goals and style. The result? Hassle-free, thoughtful travel that leaves a lasting impression and memories that stay with you forever.',
   },
   {
     name: 'Affordable & Reliable',
     id: 'tier-business',
     href: '#',
-    priceMonthly: '$',
-    description: "At TravelPilot, we make your dream vacations possible—without breaking the bank. Thanks to our strong relationships with global partners, we’re able to provide exceptional experiences at competitive prices. Our best-rate promise means you never have to sacrifice quality for affordability. We combine dependable service with budget-conscious planning, offering you incredible value at every turn. Whether you're exploring hidden gems or iconic destinations, you’ll travel with the confidence of knowing you're in capable, cost-effective hands.",
+    icon: DollarSign,
+    description: 'At TravelPilot, we make your dream vacations possible—without breaking the bank. Thanks to our strong relationships with global partners, we are able to provide exceptional experiences at competitive prices. Our best-rate promise means you never have to sacrifice quality for affordability. We combine dependable service with budget-conscious planning, offering you incredible value at every turn. Whether you are exploring hidden gems or iconic destinations, you will travel with the confidence of knowing you are in capable, cost-effective hands.',
   },
 ]
 
@@ -58,23 +59,17 @@ function WhyPilot() {
             )}
           >
 
+            <div className="flex items-center justify-center mb-6">
+              <div className="bg-green-100 p-4 rounded-full">
+                <tier.icon className="h-8 w-8 text-green-600" />
+              </div>
+            </div>
             <h3
               id={tier.id}
-              className={classNames(tier.featured ? 'text-green-800' : 'text-green-800', 'text-base/7 font-semibold')}
+              className={classNames(tier.featured ? 'text-green-800' : 'text-green-800', 'text-base/7 font-semibold text-center')}
             >
               {tier.name}
             </h3>
-            <p className="mt-4 flex items-baseline gap-x-2">
-              <span
-                className={classNames(
-                  tier.featured ? 'text-gray-900' : 'text-gray-900',
-                  'text-5xl font-semibold tracking-tight',
-                )}
-              >
-                {tier.priceMonthly}
-              </span>
-              <span className={classNames(tier.featured ? 'text-gray-600' : 'text-gray-600', 'text-base')}>/month</span>
-            </p>
             <p className={classNames(tier.featured ? 'text-gray-600' : 'text-gray-600', 'mt-6 text-base/7')}>
               {tier.description}
             </p>
