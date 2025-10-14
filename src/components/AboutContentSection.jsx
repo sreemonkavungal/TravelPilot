@@ -15,7 +15,7 @@ function AboutContentSection() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-green-50 to-blue-50 py-10 px-6 sm:px-10 lg:px-20 mt-26">
+      <section className="relative bg-green-50 py-10 px-6 sm:px-10 lg:px-20 mt-26">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
             About TravelPilot
@@ -110,10 +110,10 @@ function AboutContentSection() {
               <div className="w-24 h-24 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <Users className="h-12 w-12 text-green-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">SREEMON K S</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Name 1</h3>
               <p className="text-green-600 font-medium mb-3">CEO & Founder</p>
               <p className="text-gray-600 text-sm">
-                15+ years in travel industry. Passionate about making travel accessible to everyone.
+                5+ years in travel industry. Passionate about making travel accessible to everyone.
               </p>
             </div>
 
@@ -121,7 +121,7 @@ function AboutContentSection() {
               <div className="w-24 h-24 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <Globe className="h-12 w-12 text-green-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">JOHN DOE</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Name 2</h3>
               <p className="text-green-600 font-medium mb-3">Head of Operations</p>
               <p className="text-gray-600 text-sm">
                 Expert in travel logistics with a global network of trusted partners.
@@ -132,7 +132,7 @@ function AboutContentSection() {
               <div className="w-24 h-24 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <Heart className="h-12 w-12 text-green-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">RICHARD ROE</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Name 3</h3>
               <p className="text-green-600 font-medium mb-3">Customer Experience Lead</p>
               <p className="text-gray-600 text-sm">
                 Dedicated to ensuring every customer has an exceptional travel experience.
